@@ -1,4 +1,4 @@
-package com.web.cliant.confrage;
+package com.web.client.confrage;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;

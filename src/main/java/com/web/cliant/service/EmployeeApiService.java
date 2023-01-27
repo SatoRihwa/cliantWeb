@@ -1,4 +1,4 @@
-package com.web.cliant.service;
+package com.web.client.service;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,9 +14,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-import com.web.cliant.confrage.CliantWebConfrage;
-import com.web.cliant.model.Employee;
-import com.web.cliant.model.EmployeeDisp;
+import com.web.client.confrage.CliantWebConfrage;
+import com.web.client.model.Employee;
+import com.web.client.model.EmployeeDisp;
 
 @Service
 @Configuration

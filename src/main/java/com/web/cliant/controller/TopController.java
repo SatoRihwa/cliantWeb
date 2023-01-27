@@ -1,4 +1,4 @@
-package com.web.cliant.controller;
+package com.web.client.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -6,9 +6,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-import com.web.cliant.model.Employee;
-import com.web.cliant.model.Project;
-import com.web.cliant.service.EmployeeApiService;
+import com.web.client.model.Employee;
+import com.web.client.model.Project;
+import com.web.client.service.EmployeeApiService;
 @Controller
 public class TopController {
 	

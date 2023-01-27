@@ -1,4 +1,4 @@
-package com.web.cliant.model;
+package com.web.client.model;
 
 import java.io.Serializable;
 
