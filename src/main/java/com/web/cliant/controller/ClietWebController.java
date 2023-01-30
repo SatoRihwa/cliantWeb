@@ -1,12 +1,12 @@
-package com.web.cliant.controller;
+package com.web.client.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.web.cliant.service.EmployeeApiService;
-import com.web.cliant.service.ProjectApiService;
+import com.web.client.service.EmployeeApiService;
+import com.web.client.service.ProjectApiService;
 
 @Controller
 public class ClietWebController{

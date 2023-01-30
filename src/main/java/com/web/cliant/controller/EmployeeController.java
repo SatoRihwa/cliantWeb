@@ -1,4 +1,4 @@
-package com.web.cliant.controller;
+package com.web.client.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.web.cliant.model.EmployeeDisp;
-import com.web.cliant.service.EmployeeApiService;
+import com.web.client.model.EmployeeDisp;
+import com.web.client.service.EmployeeApiService;
 
 @Controller
 public class EmployeeController {

@@ -9,13 +9,13 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.api</groupId>
-	<artifactId>cliantWeb</artifactId>
+	<artifactId>clientWeb</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>cliantWeb</name>
+	<name>clientWeb</name>
 	<description>MicroService Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
-		<start-class>com.web.cliant.CliantWebApplication</start-class>
+		<start-class>com.web.client.CliantWebApplication</start-class>
 	</properties>
 	<dependencies>
 		<dependency>
