@@ -38,7 +38,7 @@
 		  	</tr>
 		    <tr th:each="data : ${employeeList}" th:object="${data}">
 		      <td th:text="*{id}"></td>
-		      <td th:link="*{name}"></td>
+		      <td th:text="*{name}"></td>
 		      <td th:text="${#dates.format(data.entrancedate, 'yyyy/MM/dd')}"></td>
 		      <td><a th:href="@{/top/employee/view/{id}(id=*{id})}">詳細</a></td>
 		      <td><a th:href="@{/top/employee/{id}(id=*{id})}">削除</a></td>
