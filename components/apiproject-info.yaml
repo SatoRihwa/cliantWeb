@@ -16,4 +16,4 @@ spec:
   type: service
   lifecycle: experimental
   system: tap-demo  # storewebapp-system.yamlのsysmte名を指定
-  owner: tmc&1-1    # team-sf-group.yamlのgroup名を指定
+  owner: tmc_1-1    # team-sf-group.yamlのgroup名を指定

@@ -5,4 +5,4 @@ metadata:
   name: apiproject-webapp
   description: apiproject application
 spec:
-  owner: tmc&1-1 # doaminの所有者を指定
+  owner: tmc_1-1 # doaminの所有者を指定
