@@ -1,0 +1,27 @@
+# org.yaml
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: tmc-demo
+  description: TMC＆1-1 Tech Joint Inspection
+  links:
+    - url: https://tanzu.vmware.com/jp/tanzu
+      title: Website
+    - url: https://tanzu.vmware.com/jp/application-platform
+      title: tap product
+spec:
+  type: organization
+  profile:
+    displayName: TMC＆1-1 Tech Joint Inspection
+    email: demo@example.com
+    picture: https://avatars.dicebear.com/api/identicon/info@example.com.svg?background=%23fff&margin=25
+  children: [team-tmc&1-1]   # このGroupの配下の子Groupを指定している
+---
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: org-group
+  description: tmc&1-1 Team
+spec:
+  targets:
+    - ./team-a-group.yaml     # 子Groupの定義情報 Github上のpath
