@@ -2,8 +2,8 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: apiproject
-  description: apiproject app
+  name: clientweb
+  description: clientweb app
   tags:
     - app-accelerator
     - java

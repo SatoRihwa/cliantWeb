@@ -2,7 +2,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Domain
 metadata:
-  name: apiproject-webapp
-  description: apiproject application
+  name: clientweb-webapp
+  description: clientweb application
 spec:
   owner: tmc_1-1 # doaminの所有者を指定
