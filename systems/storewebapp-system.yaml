@@ -1,0 +1,9 @@
+# storewebapp-system.yaml
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: storefrontui
+  description: Storefront Web Application for fictitious e-commerce
+spec:
+  owner: team-tmc_1-1       # 所有者を指定
+  domain: apiproject-webapp    # domain名を指定

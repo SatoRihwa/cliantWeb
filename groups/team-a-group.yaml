@@ -1,0 +1,38 @@
+# team-a-group.yaml
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: team-tmc_1-1
+  description: Team tmc_1-1
+spec:
+  type: team
+  profile:
+    # Intentional no displayName for testing
+    email: team-sf@example.com
+    picture: https://avatars.dicebear.com/api/identicon/team-sf@example.com.svg?background=%23fff&margin=25
+  parent: tmc-demo   # 親groupを指定する
+  children: []
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: demo-user00
+spec:
+  profile:
+    displayName: demo-user00   # TAP GUI上に表示されるユーザ名
+    email: demo-user00@demo.com       # TAP GUI上に表示されるメールアドレス
+    picture: https://avatars.dicebear.com/api/avataaars/hirokim@vmware.com.svg?background=%23fff
+  memberOf: [team-tmc_1-1]   # 所属するgroupを指定
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: vmware-employee1
+spec:
+  profile:
+    displayName: VMware Tanzu
+    email: guest2@example.com
+    picture: https://avatars.dicebear.com/api/avataaars/guest2@example.com.svg?background=%23fff
+  memberOf: [team-tmc_1-1]

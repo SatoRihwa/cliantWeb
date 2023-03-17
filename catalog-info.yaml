@@ -1,0 +1,12 @@
+#catalog-info.yaml
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: storeweb-catalog-info
+  description: A catalog for the StoreWeb application
+spec:
+  targets:
+    - ./components/apiproject-info.yaml          # Componentの定義情報 Github上のpath
+    - ./groups/org.yaml                          # Groupの定義情報 Github上のpath
+    - ./systems/storewebapp-system.yaml          # Systemの定義情報 Github上のpath
+    - ./domains/storewebapp-domain.yaml          # Domainの定義情報 Github上のpath
