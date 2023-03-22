@@ -11,7 +11,7 @@ metadata:
     - web
     - tanzu
   annotations:
-    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=apiproject'
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=clientweb'
 spec:
   type: service
   lifecycle: experimental
