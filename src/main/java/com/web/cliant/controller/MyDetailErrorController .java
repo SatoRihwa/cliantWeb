@@ -21,7 +21,7 @@ import java.util.Map;
  */
 @Controller
 @RequestMapping("/error") // エラーページへのマッピング
-public class MyErrorDetail implements ErrorController {
+public class MyDetailErrorController  implements ErrorController {
 
   /**
    * エラーページのパスを返す。
