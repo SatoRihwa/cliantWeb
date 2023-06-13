@@ -1,4 +1,4 @@
-package com.web.client.controller;
+package com.web.cliant.controller;
 
 import org.springframework.boot.web.servlet.error.DefaultErrorAttributes;
 import org.springframework.boot.web.servlet.error.ErrorController;
@@ -21,14 +21,13 @@ import java.util.Map;
  */
 @Controller
 @RequestMapping("/error") // エラーページへのマッピング
-public class MyDetailErrorController implements ErrorController {
+public class MyErrorDetail implements ErrorController {
 
   /**
    * エラーページのパスを返す。
    *
    * @return エラーページのパス
    */
-  @Override
   public String getErrorPath() {
     return "/error";
   }
@@ -42,8 +41,8 @@ public class MyDetailErrorController implements ErrorController {
   private static Map<String, Object> getErrorAttributes(HttpServletRequest req) {
     // DefaultErrorAttributes クラスで詳細なエラー情報を取得する
     ServletWebRequest swr = new ServletWebRequest(req);
-    DefaultErrorAttributes dea = new DefaultErrorAttributes(true);
-    return dea.getErrorAttributes(swr, true);
+    DefaultErrorAttributes dea = new DefaultErrorAttributes();
+    return dea.getErrorAttributes(swr, null);
   }
 
   /**
